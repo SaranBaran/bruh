@@ -13,6 +13,7 @@ public class SpawnCollectible : MonoBehaviour
         displayText.SetActive(false);
     }
 
+
     public void OnTriggerEnter2D(Collider2D Player)
     {
         PreFab.transform.position = spawnPoint.position;
@@ -20,6 +21,8 @@ public class SpawnCollectible : MonoBehaviour
         pow.Play();
         displayText.SetActive(true);
     }
+
+
 
 }
 
