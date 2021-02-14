@@ -17,8 +17,6 @@ public class SpawnCollectible : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D Player)
     {
         PreFab.transform.position = spawnPoint.position;
-        Destroy(gameObject);
-        pow.Play();
         displayText.SetActive(true);
     }
 

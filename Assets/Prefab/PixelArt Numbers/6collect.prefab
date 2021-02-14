@@ -4887,7 +4887,6 @@ GameObject:
   - component: {fileID: 2120276954323813248}
   - component: {fileID: 5584976952787160644}
   - component: {fileID: 5615520158337378538}
-  - component: {fileID: 4540453288832220302}
   m_Layer: 0
   m_Name: 6collect
   m_TagString: Collectible
@@ -5007,15 +5006,3 @@ PolygonCollider2D:
       - {x: 0.14, y: -0.11}
       - {x: 0.14, y: -0.53999996}
       - {x: -0.14, y: -0.53999996}
---- !u!114 &4540453288832220302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8117841792859753445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a390b81f7f53a4a9acc7d852ad63ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

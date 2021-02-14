@@ -21,7 +21,6 @@ public class ScoreScript : MonoBehaviour
         if (Collect.tag == "Collectible")
         {
             countdownScript.animator.SetTrigger("yesCollect");
-            Destroy(Collect.gameObject);
             ScoreNum += 1;
             countdownScript.currentTime = 10f;
         }
