@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4087825738875181833}
   - component: {fileID: 1866947387210677536}
   - component: {fileID: 1466413797400231545}
+  - component: {fileID: 2276376419184348473}
   m_Layer: 0
   m_Name: 2collect
   m_TagString: notCollect
@@ -157,6 +158,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7786741, y: 1.9098225}
   m_EdgeRadius: 0
+--- !u!95 &2276376419184348473
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752618126561308193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2443397e1347c5e46a79de43ed5e8bae, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7479075208251597027
 GameObject:
   m_ObjectHideFlags: 0
@@ -4915,7 +4935,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

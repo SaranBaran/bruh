@@ -4758,7 +4758,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4887,6 +4887,7 @@ GameObject:
   - component: {fileID: 2120276954323813248}
   - component: {fileID: 5584976952787160644}
   - component: {fileID: 5615520158337378538}
+  - component: {fileID: 8733697045074521558}
   m_Layer: 0
   m_Name: 6collect
   m_TagString: Collectible
@@ -5006,3 +5007,22 @@ PolygonCollider2D:
       - {x: 0.14, y: -0.11}
       - {x: 0.14, y: -0.53999996}
       - {x: -0.14, y: -0.53999996}
+--- !u!95 &8733697045074521558
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8117841792859753445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3467408a2a05bc46847a5dbcc3b806c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

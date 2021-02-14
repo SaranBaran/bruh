@@ -23,6 +23,8 @@ public class Playercontroller : MonoBehaviour
     public ParticleSystem dashEffect;
     public ParticleSystem dust;
     public GameObject bulletTimeEffect;
+    public AudioSource jumpSound;
+    public AudioSource dashSound;
 
 
     // Start is called before the first frame update
@@ -42,12 +44,11 @@ public class Playercontroller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A))
         {
 
-
-            ghost.makeGhost = true;
             if (doubleTapTime > Time.time && lastKeyCode == KeyCode.A)
             {
                 StartCoroutine(Dash(-1f));
                 DashEffect();
+                dashSound.Play();
             }
             else
             {
@@ -61,12 +62,11 @@ public class Playercontroller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
 
-            ghost.makeGhost = true;
-
             if (doubleTapTime > Time.time && lastKeyCode == KeyCode.D)
             {
                 StartCoroutine(Dash(1f));
                 DashEffect();
+                dashSound.Play();
             }
             else
             {
@@ -78,6 +78,7 @@ public class Playercontroller : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
         {
             rb.AddForce(Vector2.up * jumpamount, ForceMode2D.Impulse);
+            jumpSound.Play();
            
         }
         if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0)
@@ -184,7 +185,6 @@ public class Playercontroller : MonoBehaviour
         yield return new WaitForSeconds(0.4f);//time we stay on Dash (we need to increase this if the Dashing distance is long)
         isDashing = false;
         rb.gravityScale = gravity;//we are turning gravity back
-
     }
 
     void CreateDust()

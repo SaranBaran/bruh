@@ -8,7 +8,7 @@ public class ScoreScript : MonoBehaviour
     public Text scoreText;
     private int ScoreNum;
     public CountdownScript countdownScript;
-
+    public AudioSource collectSound;
 
     void Start()
     {
@@ -23,6 +23,7 @@ public class ScoreScript : MonoBehaviour
             countdownScript.animator.SetTrigger("yesCollect");
             ScoreNum += 1;
             countdownScript.currentTime = 10f;
+            collectSound.Play();
         }
     }
 }

@@ -42,6 +42,7 @@ public class MonstersSpawnerControl : MonoBehaviour
 			clone = Instantiate(monsters[randomMonster], spawnPoints[randomSpawnPoint].position,
 				Quaternion.identity);
 			Destroy_Timer();
+			GetComponent<AudioSource>().Play();
 		} 
 
 	}

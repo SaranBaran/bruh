@@ -5,6 +5,7 @@ using UnityEngine;
 public class notCollectyiblesScript : MonoBehaviour
 {
     public CountdownScript countdownScript;
+    public AudioSource notCollectSound;
 
     private void OnTriggerEnter2D(Collider2D notCollect)
     {
@@ -14,6 +15,7 @@ public class notCollectyiblesScript : MonoBehaviour
             Destroy(notCollect.gameObject);
             countdownScript.animator.SetTrigger("NotCollect");
             countdownScript.currentTime = countdownScript.currentTime - 1;
+            notCollectSound.Play();
         }
     }
 }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7448206258490649874}
   - component: {fileID: 6221147508002941018}
   - component: {fileID: 19058461343243574}
+  - component: {fileID: 5067558723033690861}
   m_Layer: 0
   m_Name: 5collect
   m_TagString: Collectible
@@ -124,6 +125,25 @@ PolygonCollider2D:
       - {x: 0.38752937, y: -0.61238194}
       - {x: 0.52, y: -0.61}
       - {x: 0.52, y: -0.08}
+--- !u!95 &5067558723033690861
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2614686540392012408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0c72624093e4f0947aa9d6efb0c0ec74, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6589179522411905311
 GameObject:
   m_ObjectHideFlags: 0
@@ -4882,7 +4902,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

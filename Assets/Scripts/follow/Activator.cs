@@ -9,5 +9,6 @@ public class Activator : MonoBehaviour
         GetComponent<Target>().enabled = true;
         enabled = false;
         GetComponent<PolygonCollider2D>().enabled = false;
+        GetComponent<Animator>().SetTrigger("collect");
     }
 }
