@@ -9,17 +9,20 @@ public class sceneLodaingManager : MonoBehaviour
     public AudioSource clickSound;
     public GameObject mainCanvas;
     public GameObject credits;
+    public AudioSource titleMusic;
 
 
     void Start()
     {
         mainCanvas.SetActive(true);
         credits.SetActive(false);
+        titleMusic.Play();
     }
 
     public void startGame()
     {
         SceneManager.LoadScene("bruh");
+        titleMusic.Stop();
     }
 
     public void QuitGame()

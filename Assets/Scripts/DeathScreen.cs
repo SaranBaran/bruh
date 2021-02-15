@@ -7,6 +7,7 @@ public class DeathScreen : MonoBehaviour
     public GameObject deathScreen;
     public CountdownScript countdownScript;
     public GameObject mainCanvas;
+    public AudioSource music;
 
     void Start()
     {
@@ -18,13 +19,14 @@ public class DeathScreen : MonoBehaviour
     {
         if (countdownScript.currentTime < 0)
         {
-                Dead();
+            Dead();
         }
     }
 
     public void Dead()  
     {
         deathScreen.SetActive(true);
+        music.Stop();
         Time.timeScale = 0f;
         mainCanvas.SetActive(false);
     }
