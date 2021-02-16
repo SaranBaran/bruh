@@ -10,6 +10,7 @@ public class sceneLodaingManager : MonoBehaviour
     public GameObject mainCanvas;
     public GameObject credits;
     public AudioSource titleMusic;
+    public GameObject tutorial;
 
 
     void Start()
@@ -17,6 +18,7 @@ public class sceneLodaingManager : MonoBehaviour
         mainCanvas.SetActive(true);
         credits.SetActive(false);
         titleMusic.Play();
+        tutorial.SetActive(false);
     }
 
     public void startGame()
@@ -45,5 +47,12 @@ public class sceneLodaingManager : MonoBehaviour
     {
         credits.SetActive(false);
         mainCanvas.SetActive(true);
+        tutorial.SetActive(false);
+    }
+
+    public void Tutorial()
+    {
+        mainCanvas.SetActive(false);
+        tutorial.SetActive(true);
     }
 }

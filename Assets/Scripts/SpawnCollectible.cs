@@ -18,6 +18,7 @@ public class SpawnCollectible : MonoBehaviour
     {
         PreFab.transform.position = spawnPoint.position;
         displayText.SetActive(true);
+        pow.Play();
     }
 
 
