@@ -19575,6 +19575,7 @@ MonoBehaviour:
   bulletTimeEffect: {fileID: 771822320}
   jumpSound: {fileID: 1469079985}
   dashSound: {fileID: 1050047396}
+  target: 30
 --- !u!50 &1617526881
 Rigidbody2D:
   serializedVersion: 4
@@ -19732,7 +19733,7 @@ MonoBehaviour:
   mask:
     serializedVersion: 2
     m_Bits: 119
-  step: 0.08
+  step: 1.5
 --- !u!114 &1617526888
 MonoBehaviour:
   m_ObjectHideFlags: 0

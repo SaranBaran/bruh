@@ -11,14 +11,25 @@ public class sceneLodaingManager : MonoBehaviour
     public GameObject credits;
     public AudioSource titleMusic;
     public GameObject tutorial;
+    public int target = 30;
 
 
     void Start()
     {
+        QualitySettings.vSyncCount = 0;
+
         mainCanvas.SetActive(true);
         credits.SetActive(false);
         titleMusic.Play();
         tutorial.SetActive(false);
+    }
+
+    void Update()
+    {
+        if (target != Application.targetFrameRate)
+        {
+            Application.targetFrameRate = target;
+        }
     }
 
     public void startGame()

@@ -22,14 +22,14 @@ public class Target : MonoBehaviour
             prvateamount = amount;
             amount++;
             
-            playerqueue = new Queue<Vector3>(0 + (20 * prvateamount));
+            playerqueue = new Queue<Vector3>(0 + (1 * prvateamount));
         }
 
         if (lastknown==Playercontroller.player.transform.position)
         {
             return;
         }
-        if (playerqueue.Count== 0 + (20 * prvateamount))
+        if (playerqueue.Count== 0 + (1 * prvateamount))
         {
             transform.position = playerqueue.Dequeue();
         }

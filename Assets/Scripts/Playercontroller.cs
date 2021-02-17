@@ -25,6 +25,7 @@ public class Playercontroller : MonoBehaviour
     public GameObject bulletTimeEffect;
     public AudioSource jumpSound;
     public AudioSource dashSound;
+    public int target = 30;
 
 
     // Start is called before the first frame update
@@ -33,11 +34,17 @@ public class Playercontroller : MonoBehaviour
         player = this;
         rb = GetComponent<Rigidbody2D>();
         bulletTimeEffect.SetActive(false);
+        QualitySettings.vSyncCount = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (target != Application.targetFrameRate)
+        {
+            Application.targetFrameRate = target;
+        }
+
         SlowMo();
 
         //Dash Left
